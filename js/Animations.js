@@ -1,13 +1,21 @@
 /**
- * Javascript that animates the markers on the map when the website starts up
+ * Javascript that contains all animation functions used on the site. 
+ * 
  * @author Naveen Chandran
  */
 
+$(document).ready()
+{
+    dropMarkers();
+}
+/**
+ * Function to drop markers onto the map on page load
+ */
 function dropMarkers()
 {
-	var markers_arr = $(".marker").slice(0,6);
+	var markers_arr = $(".marker").slice(0,6);     #contains all markers
 	
-	for (marker: markers_arr)
+	for (marker in markers_arr)
 		{
 			
 		}

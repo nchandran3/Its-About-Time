@@ -5,11 +5,14 @@
  */
 
 
-
+$(document).ready(function()
+{
+    $(".marker").css({"display" : "none"});
+});
 
 
 /**
- * On document load, drop markers
+ * On window load, drop markers
  */
 $(window).load(function()
 {
@@ -24,6 +27,7 @@ $(window).load(function()
  */
 function dropMarkers()
 {
+    $(".marker").css({"display" : "block"});    //show the markers again once the entire page has loaded
 	var markers = $(".marker");     //contains all marker objects
 	var finalPositions_arr = [];
 	
@@ -44,7 +48,7 @@ function dropMarkers()
 	    drop($(this), pos);
 	});
 	
-	$(".marker").find(".name").delay(200).fadeIn(3500);            //fade in marker labels
+	$(".marker").find(".name").delay(600).fadeIn(3500);            //fade in marker labels
 }
 
 /**

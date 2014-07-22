@@ -14,39 +14,41 @@
         <div id="map">
             <div id="title">It's about time</div>
     
-            <div class="marker marker-raval" data-name="raval">
+            <div class="marker marker-raval" id="raval">
                 <div class="icon"></div>
-                <div class="name">Rambla de Raval</div>
+                <div class="name"></div>
 
             </div>
-            <div class="marker marker-placareial" data-name="placareial">
+            <div class="marker marker-placareial" id="placareial">
                 <div class="icon"></div>
-                <div class="name">Placa Reial</div>
+                <div class="name"></div>
 
             </div>
-            <div class="marker marker-fortpienc" data-name="fortpienc">
+            <div class="marker marker-fortpienc" id="fortpienc">
                 <div class="icon"></div>
-                <div class="name">Fort Pienc</div>
+                <div class="name"></div>
                 
             </div>
-            <div class="marker marker-arc" data-name="arc">
+            <div class="marker marker-arc" id="arc">
                 <div class="icon"></div>
-                <div class="name">Arc de Triomf</div>
+                <div class="name"></div>
                 
             </div>
-            <div class="marker marker-santandreu" data-name="santandreu">
+            <div class="marker marker-santandreu" id="santandreu">
                 <div class="icon"></div>
-                <div class="name">Sant Andreu</div>
+                <div class="name"></div>
                 
             </div>
-            <div class="marker marker-macba" data-name="macba">
+            <div class="marker marker-macba" id="macba">
                 <div class="icon"></div>
-                <div class="name">MACBA</div>
+                <div class="name"></div>
                 
             </div>
         </div>
         <div id="display">
             <div id="exitdisplay">X</div>
+            <div id="slide"></div>
+            <div id="galleries"></div>
         </div>
     </div>
 <script>
@@ -104,7 +106,9 @@ $(document).ready(function() {
     });
 
     $.each(images, function(i, value) {
-        console.log(value);
+        $marker = $("#" + value.id);
+        $marker.css({top: value.location[0], left: value.location[1]});
+        $marker.children(".name").html(value.name)
     });
 });
 </script>

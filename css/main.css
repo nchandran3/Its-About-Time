@@ -61,35 +61,6 @@ body {
     margin-top: 2px;
 }
 
-.marker-raval {
-    top: 525px;
-    left: 183px;
-}
-
-.marker-placareial {
-    top: 566px;
-    left: 253px;
-}
-
-.marker-fortpienc {
-    top: 446px;
-    left: 496px;
-}
-
-.marker-arc {
-    top: 490px;
-    left: 426px;
-}
-
-.marker-santandreu {
-    top: 59px;
-    left: 1015px;
-}
-
-.marker-macba {
-    top: 452px;
-    left: 224px;
-}
 
 #display {
     background: rgba(50,50,50, 0.9);
@@ -126,4 +97,8 @@ body {
     box-shadow: rgba(0,0,0,0.3) 0px 2px 1px 2px;
     cursor: pointer;
     cursor: hand;
+}
+
+#slide {
+    width: 1240;
 }

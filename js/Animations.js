@@ -31,6 +31,7 @@ function dropMarkers()
 		{
 		  finalPositions_arr.push($(this).css("top"));      //contains where the markers should fall
 		  $(this).css("top" , "0");                         //the markers are all now at the top of the map
+		  $(this).find(".name").css({"display" : "none"});  //get rid of marker labels until later
 		});
 		
 		console.log("Final Positions" + finalPositions_arr);
@@ -43,6 +44,7 @@ function dropMarkers()
 	    drop($(this), pos);
 	});
 	
+	$(".marker").find(".name").delay(200).fadeIn(3500);            //fade in marker labels
 }
 
 /**

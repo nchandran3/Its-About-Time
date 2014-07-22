@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/jquery.js"></script>
+    <!-- 
+    <script src="js/Animations.js"></script>
+ -->
     <title>It's about time</title>
 </head>
 <body>
@@ -11,32 +14,32 @@
         <div id="map">
             <div id="title">It's about time</div>
     
-            <div class="marker marker-raval">
+            <div class="marker marker-raval" data-name="raval">
                 <div class="icon"></div>
                 <div class="name">Rambla de Raval</div>
 
             </div>
-            <div class="marker marker-placareial">
+            <div class="marker marker-placareial" data-name="placareial">
                 <div class="icon"></div>
                 <div class="name">Placa Reial</div>
 
             </div>
-            <div class="marker marker-fortpienc">
+            <div class="marker marker-fortpienc" data-name="fortpienc">
                 <div class="icon"></div>
                 <div class="name">Fort Pienc</div>
                 
             </div>
-            <div class="marker marker-arc">
+            <div class="marker marker-arc" data-name="arc">
                 <div class="icon"></div>
                 <div class="name">Arc de Triomf</div>
                 
             </div>
-            <div class="marker marker-santandreu">
+            <div class="marker marker-santandreu" data-name="santandreu">
                 <div class="icon"></div>
                 <div class="name">Sant Andreu</div>
                 
             </div>
-            <div class="marker marker-macba">
+            <div class="marker marker-macba" data-name="macba">
                 <div class="icon"></div>
                 <div class="name">MACBA</div>
                 
@@ -47,11 +50,22 @@
         </div>
     </div>
 <script>
-$(".marker").click(function() {
-    $("#display").fadeIn(250);
-});
-$("#exitdisplay").click(function() {
-    $("#display").fadeOut(250);
+var images;
+
+$(document).ready(function() {
+    $(".marker").click(function() {
+        $("#display").fadeIn(250);
+    });
+    $("#exitdisplay").click(function() {
+        $("#display").fadeOut(250);
+    });
+
+    $.getJSON("js/images.json", function(data) {
+        images = $.parseJSON(data);
+        $.each(images, function(image) {
+            console.log(image);
+        });
+    })
 });
 </script>
 </body>

@@ -1,0 +1,52 @@
+// Lists each location along with its respective pictures and times
+[   {
+        "id": "raval",
+        "name": "Rambla de Raval",
+        "location": [528,183],
+        "images" : [
+            {
+                "url": "images/raval1.jpg",
+                "time": 14
+            },
+            {
+                "url": "images/raval2.jpg",
+                "time": 21
+            },
+            {
+                "url": "images/raval3.jpg",
+                "time": 3
+            }           
+
+        ]
+    },
+    {
+        "id": "fortpienc",
+        "name": "Fort Pienc",
+        "location": [446,496],
+        "images" : []
+    },
+    {
+        "id" : "placareial",
+        "name": "Placa Reial",
+        "location": [566,253],
+        "images" : []
+    },
+    {
+        "id": "arc",
+        "name": "Arc de Triomf",
+        "location": [490,426],
+        "images" : []
+    },
+    {
+        "id" : "santandreu",
+        "name": "Sant Andreu",
+        "location": [59,1015],
+        "images" : []
+    },
+    {
+        "id" : "macba",
+        "name": "MACBA",
+        "location": [452,224],
+        "images" : []
+    }
+]

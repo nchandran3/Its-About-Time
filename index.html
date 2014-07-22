@@ -76,7 +76,7 @@ var imagesJSON = '{\
     },\
     "placareial" :\
     {\
-        "name": "Placa Reial",\
+        "name": "Pla&ccedil;a Reial",\
         "location": [566,253],\
         "images" : []\
     },\
@@ -141,7 +141,7 @@ $(document).ready(function() {
         $("#display").fadeIn(250);
         $("#slidetitle").html(images[id]["name"]);
         timesList = images[id]["times"];
-        $("#galleries").html();
+        $("#galleries").empty();
         $.each(timesList, function(key, value) {
             $("#galleries").append("<div class='gallery' " +
                 "style='background: url(\"" + value.thumb + "\")'>" +

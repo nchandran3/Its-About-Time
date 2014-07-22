@@ -54,10 +54,10 @@ function dropMarkers()
  */
 function drop($marker, pos)
 {
-    var time = Math.random()*800;     //amount of delay before the marker should fall
+    var time = Math.random()*300;     //amount of delay before the marker should fall
     $marker
         .delay(time)
-        .animate({top : pos} , 400);
+        .animate({top : pos} , Math.random()*500 + 100);
 }
 
 

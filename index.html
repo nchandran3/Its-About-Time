@@ -50,7 +50,50 @@
         </div>
     </div>
 <script>
-var images;
+var imagesJSON = '[\
+   {\
+        "id": "raval",\
+        "name": "Rambla de Raval",\
+        "location": [528,183],\
+        "images" : [\
+            {\
+                "url": "images/raval1.jpg",\
+                "time": 14\
+            }          \
+        ]\
+    },\
+    {\
+        "id": "fortpienc",\
+        "name": "Fort Pienc",\
+        "location": [446,496],\
+        "images" : []\
+    },\
+    {\
+        "id" : "placareial",\
+        "name": "Placa Reial",\
+        "location": [566,253],\
+        "images" : []\
+    },\
+    {\
+        "id": "arc",\
+        "name": "Arc de Triomf",\
+        "location": [490,426],\
+        "images" : []\
+    },\
+    {\
+        "id" : "santandreu",\
+        "name": "Sant Andreu",\
+        "location": [59,1015],\
+        "images" : []\
+    },\
+    {\
+        "id" : "macba",\
+        "name": "MACBA",\
+        "location": [452,224],\
+        "images" : []\
+    }\
+]';
+var images = $.parseJSON(imagesJSON);
 
 $(document).ready(function() {
     $(".marker").click(function() {
@@ -60,12 +103,9 @@ $(document).ready(function() {
         $("#display").fadeOut(250);
     });
 
-    $.getJSON("js/images.json", function(data) {
-        images = $.parseJSON(data);
-        $.each(images, function(image) {
-            console.log(image);
-        });
-    })
+    $.each(images, function(i, value) {
+        console.log(value);
+    });
 });
 </script>
 </body>

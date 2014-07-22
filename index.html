@@ -47,14 +47,20 @@
         </div>
         <div id="display">
             <div id="exitdisplay">X</div>
-            <div id="slide"></div>
             <div id="galleries"></div>
+
+            <div id="slide">
+                <div id="slidetitle">This is a title</div>
+            </div>
+<!--             <div class="nav" id="goright"></div>
+            <div class="nav" id="goleft"></div>
+ -->
         </div>
     </div>
 <script>
-var imagesJSON = '[\
+var imagesJSON = '{\
+   "raval" :\
    {\
-        "id": "raval",\
         "name": "Rambla de Raval",\
         "location": [528,183],\
         "images" : [\
@@ -64,49 +70,81 @@ var imagesJSON = '[\
             }          \
         ]\
     },\
+    "fortpienc" : \
     {\
-        "id": "fortpienc",\
         "name": "Fort Pienc",\
         "location": [446,496],\
         "images" : []\
     },\
+    "placareial" :\
     {\
-        "id" : "placareial",\
         "name": "Placa Reial",\
         "location": [566,253],\
         "images" : []\
     },\
+    "arc" :\
     {\
-        "id": "arc",\
         "name": "Arc de Triomf",\
         "location": [490,426],\
         "images" : []\
     },\
+    "santandreu" :\
     {\
-        "id" : "santandreu",\
         "name": "Sant Andreu",\
         "location": [59,1015],\
         "images" : []\
     },\
+    "macba" :\
     {\
-        "id" : "macba",\
         "name": "MACBA",\
         "location": [452,224],\
-        "images" : []\
+        "times" : {\
+            "day" :\
+            {\
+                "name": "Day",\
+                "images" : [\
+                    {\
+                        "url": "images/macba1.jpg",\
+                        "caption": "This is a caption"\
+                    }\
+                ]\
+            },\
+            "evening" :\
+            {\
+                "name": "Evening",\
+                "url": "images/macba2.jpg"\
+            },\
+            "night" :\
+            {\
+                "name": "Night",\
+                "url": "images/macba3.jpg"\
+            }\
+        }\
     }\
-]';
+}';
 var images = $.parseJSON(imagesJSON);
 
 $(document).ready(function() {
     $(".marker").click(function() {
+        var id = this.id;
         $("#display").fadeIn(250);
+        $("#slidetitle").html(images[id]["name"]);
+        timesList = images[id]["times"];
+        $("#galleries").html();
+        $.each(timesList, function(key, value) {
+            $("#galleries").append("<div class='gallery'><div class='galleryname'>" +
+                value.name + "</div></div>", function() {
+                    this.css("background","url(" + value.url + ")");
+                });
+        });
+        // $("#slide").css("background", "url(" + imageList[0]["url"] + ")" );
     });
     $("#exitdisplay").click(function() {
         $("#display").fadeOut(250);
     });
 
-    $.each(images, function(i, value) {
-        $marker = $("#" + value.id);
+    $.each(images, function(key, value) {
+        $marker = $("#" + key);
         $marker.css({top: value.location[0], left: value.location[1]});
         $marker.children(".name").html(value.name)
     });

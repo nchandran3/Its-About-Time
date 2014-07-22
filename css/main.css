@@ -78,6 +78,7 @@ body {
 }
 
 #exitdisplay{
+    position: absolute;
     font-weight: bold;
     height: 24px;
     width: 24px;
@@ -87,9 +88,8 @@ body {
     font-size: 13pt;
     padding-left: 6px;
     padding-top: 1px;
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
+    top: 10px;
+    right: 10px;
 }
 
 #exitdisplay:hover {
@@ -100,5 +100,66 @@ body {
 }
 
 #slide {
-    width: 1240;
+    float: left;
+    background: #eee;
+    width: 960px;
+    height: 540px;
+    margin: 0px;
+    box-shadow: rgba(0,0,0,0.2) 0px 0px 5px 5px;
+    position: relative;
+}
+
+#slidetitle{
+    color: #eee;
+    background: rgb(20,20,20);
+    font-size: 18pt;
+    top: 10px;
+    left: 10px;
+    line-height: 22pt;
+    padding: 0px 5px;
+    text-align: center;   
+    position: absolute; 
+    box-shadow: rgba(0,0,0,0.3) 2px 2px 3px 1px;
+}
+
+#galleries{
+    float: left;
+    width: 250px;
+    height: 540px;
+    margin: 5px 0px 0px 0px;
+}
+
+.gallery {
+    background: rgba(0,0,0,0.5);
+    height: 135px;
+    width: 232px;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+
+.galleryname{
+    color: #eee;
+    background: rgb(20,20,20);
+    font-size: 12pt;
+    margin-top: 3px;
+    margin-left: 3px;
+    line-height: 14pt;
+    padding: 0px 5px;
+    display: inline-block;   
+    box-shadow: rgba(0,0,0,0.3) 2px 2px 3px 1px;
+}
+
+.nav {
+
+    float: left;
+    display: inline-block;
+    background: rgba(0,0,0,0.0);
+    height: 540px;
+    width: 150px;
+}
+
+.nav:hover {
+    background: rgba(50,50,50,0.7);
+    cursor: pointer;
+    cursor: hand;
 }

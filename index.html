@@ -100,6 +100,7 @@ var imagesJSON = '{\
             "day" :\
             {\
                 "name": "Day",\
+                "thumb": "images/macbadaythumb.jpg",\
                 "images" : [\
                     {\
                         "url": "images/macba1.jpg",\
@@ -110,12 +111,24 @@ var imagesJSON = '{\
             "evening" :\
             {\
                 "name": "Evening",\
-                "url": "images/macba2.jpg"\
+                "thumb": "images/macbaeveningthumb.jpg",\
+                "images" : [\
+                    {\
+                        "url": "images/macba2.jpg",\
+                        "caption": "This is a caption"\
+                    }\
+                ]\
             },\
             "night" :\
             {\
                 "name": "Night",\
-                "url": "images/macba3.jpg"\
+                "thumb": "images/macbanightthumb.jpg",\
+                "images": [\
+                    {\
+                        "url": "images/macba3.jpg",\
+                        "caption": "This is a caption"\
+                    }\
+                ]\
             }\
         }\
     }\
@@ -130,12 +143,10 @@ $(document).ready(function() {
         timesList = images[id]["times"];
         $("#galleries").html();
         $.each(timesList, function(key, value) {
-            $("#galleries").append("<div class='gallery'><div class='galleryname'>" +
-                value.name + "</div></div>", function() {
-                    this.css("background","url(" + value.url + ")");
-                });
+            $("#galleries").append("<div class='gallery' " +
+                "style='background: url(\"" + value.thumb + "\")'>" +
+                "<div class='galleryname'>" + value.name + "</div></div>");
         });
-        // $("#slide").css("background", "url(" + imageList[0]["url"] + ")" );
     });
     $("#exitdisplay").click(function() {
         $("#display").fadeOut(250);

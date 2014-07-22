@@ -11,7 +11,7 @@
 /**
  * On document load, drop markers
  */
-$(document).ready(function()
+$(window).load(function()
 {
     dropMarkers();
 });

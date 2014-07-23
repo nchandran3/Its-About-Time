@@ -140,12 +140,14 @@ $(document).ready(function() {
         var id = this.id;
         $("#display").fadeIn(250);
         $("#slidetitle").html(images[id]["name"]);
-        timesList = images[id]["times"];
+        $("#slide").css("background","url('images/macba3.jpg')");
         $("#galleries").empty();
+        timesList = images[id]["times"];
         $.each(timesList, function(key, value) {
-            $("#galleries").append("<div class='gallery' " +
-                "style='background: url(\"" + value.thumb + "\")'>" +
-                "<div class='galleryname'>" + value.name + "</div></div>");
+            $("#galleries").append("<div class='gallery'>" +
+                "<div class='gallerythumb' style='background: url(\"" +
+                value.thumb + "\")'></div>" + "<div class='galleryname'>" +
+                value.name + "</div></div>");
         });
     });
     $("#exitdisplay").click(function() {

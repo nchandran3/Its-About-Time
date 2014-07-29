@@ -45,6 +45,14 @@ var imagesJSON = '{\
                     {\
                         "url": "images/macbaday2.jpg",\
                         "caption": "During the day at the MACBA"\
+                    },\
+                    {\
+                        "url": "images/macbaday3.jpg",\
+                        "caption": "During the day at the MACBA"\
+                    },\
+                    {\
+                        "url": "images/macbaday4.jpg",\
+                        "caption": "During the day at the MACBA"\
                     }\
                 ]\
             },\
@@ -54,7 +62,19 @@ var imagesJSON = '{\
                 "thumb": "images/macbaeveningthumb.jpg",\
                 "images" : [\
                     {\
-                        "url": "images/macba2.jpg",\
+                        "url": "images/macbaeve1.jpg",\
+                        "caption": "This is a caption"\
+                    },\
+                    {\
+                        "url": "images/macbaeve2.jpg",\
+                        "caption": "This is a caption"\
+                    },\
+                    {\
+                        "url": "images/macbaeve3.jpg",\
+                        "caption": "This is a caption"\
+                    },\
+                    {\
+                        "url": "images/macbaeve4.jpg",\
                         "caption": "This is a caption"\
                     }\
                 ]\
@@ -65,7 +85,19 @@ var imagesJSON = '{\
                 "thumb": "images/macbanightthumb.jpg",\
                 "images": [\
                     {\
-                        "url": "images/macba3.jpg",\
+                        "url": "images/macbanight1.jpg",\
+                        "caption": "This is a caption"\
+                    },\
+                    {\
+                        "url": "images/macbanight2.jpg",\
+                        "caption": "This is a caption"\
+                    },\
+                    {\
+                        "url": "images/macbanight3.jpg",\
+                        "caption": "This is a caption"\
+                    },\
+                    {\
+                        "url": "images/macbanight4.jpg",\
                         "caption": "This is a caption"\
                     }\
                 ]\

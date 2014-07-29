@@ -32,10 +32,10 @@ function placeMarkers(images) {
 function loadImage(image) {
     $("#slide").fadeOut(50, function() {
         $("#slide").css({"background-image": "url('" + image["url"] + "')"});
+        $("#slidecaption").html(image["caption"]);
         $(this).fadeIn(200);
     });
 
-    $("#slidecaption").html(image["caption"]);
 }
 
 /*
@@ -44,9 +44,8 @@ function loadImage(image) {
 function loadGallery(location, time) {
     var gallery = images[location]["times"][time];
 
-    $("#slidetitle").html(gallery["name"]);
+    $("#slidetitle").html(images[location]["name"]);
 
-    onDisplay = 0;
     loadImage(gallery["images"][onDisplay]);
 
     // This off/on stuff deals with removing previous listeners created at each loadGallery call, and creating new ones

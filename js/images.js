@@ -3,37 +3,31 @@ var imagesJSON = '{\
    {\
         "name": "Rambla de Raval",\
         "location": [388,228],\
-        "images" : [\
-            {\
-                "url": "images/raval1.jpg",\
-                "time": 14\
-            }          \
-        ]\
+        "times" : []\
     },\
     "fortpienc" : \
     {\
         "name": "Fort Pienc",\
         "location": [159,1092],\
-        "images" : []\
+        "times" : []\
     },\
     "placareial" :\
     {\
         "name": "Pla&ccedil;a Reial",\
         "location": [487,418],\
-        "images" : []\
+        "times" : []\
     },\
     "arc" :\
     {\
         "name": "Arc de Triomf",\
         "location": [287,900],\
-        "images" : []\
+        "times" : []\
     },\
     "macba" :\
     {\
         "name": "MACBA",\
         "location": [201,305],\
-        "times" : {\
-            "day" :\
+        "times" : [\
             {\
                 "name": "Day",\
                 "thumb": "images/macbadaythumb.jpg",\
@@ -56,7 +50,6 @@ var imagesJSON = '{\
                     }\
                 ]\
             },\
-            "evening" :\
             {\
                 "name": "Evening",\
                 "thumb": "images/macbaeveningthumb.jpg",\
@@ -79,7 +72,6 @@ var imagesJSON = '{\
                     }\
                 ]\
             },\
-            "night" :\
             {\
                 "name": "Night",\
                 "thumb": "images/macbanightthumb.jpg",\
@@ -102,7 +94,7 @@ var imagesJSON = '{\
                     }\
                 ]\
             }\
-        }\
+        ]\
     }\
 }';
 var images = $.parseJSON(imagesJSON);

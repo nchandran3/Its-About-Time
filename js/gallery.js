@@ -1,4 +1,6 @@
-var onDisplay = 0;
+var currentImage = 0;
+var currentGallery = 0;
+var currentLocation;
 
 // This can be done before the document is ready, because they are then reset
 // and animated into place
@@ -11,6 +13,31 @@ $(document).ready(function() {
 
     $("#exitdisplay").click(function() {
         $("#display").fadeOut(250);
+    });
+
+    $(this).keydown(function(e) {
+        switch(e.which) {
+            case 38:
+                navigate("up");
+                break;
+            case 40:
+                navigate("down");
+                break;
+            case 37:
+                navigate("left");
+                break;
+            case 39:
+                navigate("right");
+                break;
+        }
+    });
+
+    $("#goleft").click( function() {
+        navigate("left");
+    });
+
+    $("#goright").click(function() {
+        navigate("right");
     });
 
 });
@@ -41,26 +68,15 @@ function loadImage(image) {
 /*
  * Loads gallery images and handles picture navigation
  */
-function loadGallery(location, time) {
-    var gallery = images[location]["times"][time];
+function loadGallery(location, index) {
+    var gallery = images[location]["times"][index];
 
     $("#slidetitle").html(images[location]["name"]);
+    $(".gallery").removeClass("galleryActive");
+    $(".gallery[data-id='" + index + "']").addClass("galleryActive");
+        
 
-    loadImage(gallery["images"][onDisplay]);
-
-    // This off/on stuff deals with removing previous listeners created at each loadGallery call, and creating new ones
-    $("#goleft").off("click").on("click", function() {
-        // Force a positive index
-        onDisplay = (onDisplay - 1 + gallery["images"].length) % gallery["images"].length;
-
-        loadImage(gallery["images"][onDisplay]);
-    });
-
-    $("#goright").off("click").on("click", function() {
-        onDisplay = (onDisplay + 1) % gallery["images"].length;
-
-        loadImage(gallery["images"][onDisplay]);
-    });
+    loadImage(gallery["images"][currentImage]);
 }
 
 /*
@@ -70,17 +86,20 @@ function showDisplay(location) {
     $("#display").fadeIn(250);
     $("#galleries").empty();
 
-    // Dictionary of gallery times
+    // List of gallery times
     timesList = images[location]["times"];
 
-    $.each(timesList, function(key, value) {
+    currentGallery, currentImage = 0;
+    currentLocation = location;
+
+    $.each(timesList, function(i, value) {
         var activeCss = "";
-        if (key == "day") {
-            loadGallery(location, key);
+        if (i == currentGallery) {
+            loadGallery(location, i);
             activeCss = "galleryActive";
         }
         $("#galleries").append("<div class='gallery " + activeCss + "' " + 
-            "data-id='" + key + "'>" +
+            "data-id='" + i + "'>" +
             "<div class='gallerythumb' style='background-image: url(\"" +
             value.thumb + "\")'></div>" + "<div class='galleryname'>" +
             value.name + "</div></div>");
@@ -88,9 +107,9 @@ function showDisplay(location) {
 
 
     $(".gallery").click(function() {
-        $(".gallery").removeClass("galleryActive");
-        $(this).addClass("galleryActive");
-        loadGallery(location, $(this).data("id"));
+        currentGallery = $(this).data("id");
+        loadGallery(location, currentGallery);
+
     }).hover(function () {
         $(this).children(".galleryname").addClass("selected");
     } ,function() {
@@ -98,4 +117,32 @@ function showDisplay(location) {
     });
 
 
+}
+
+function navigate(dir) {
+    var gallery = images[currentLocation]["times"][currentGallery];
+    var galleriesSize = images[currentLocation]["times"].length;
+    var imagesSize = gallery["images"].length;
+
+    switch(dir) {
+        case "up":
+            currentGallery = (currentGallery - 1 + galleriesSize) % galleriesSize;
+            loadGallery(currentLocation, currentGallery);
+            break;
+        case "down":
+            currentGallery = (currentGallery + 1) % galleriesSize; 
+            loadGallery(currentLocation, currentGallery);
+
+            break;
+        case "left":
+            currentImage = (currentImage - 1 + imagesSize) % imagesSize;
+            loadImage(gallery["images"][currentImage]);
+
+            break;
+        case "right":
+            currentImage = (currentImage + 1) % imagesSize;
+            loadImage(gallery["images"][currentImage]);
+
+            break;
+    }
 }

@@ -15,7 +15,7 @@ body {
     background: rgba(20,20,20,0.6);
     font-size: 24pt;
     top: 20px;
-    left: 20px;
+    left: 280px;
     padding: 0px 5px;
     text-align: center;    
     position: absolute;
@@ -101,11 +101,11 @@ body {
 
 #slide {
     float: left;
-    background: #eee;
+    background: none;
     width: 960px;
-    height: 540px;
+    height: 564px;
     margin: 5px 0px 0px 0px;
-
+    background-repeat: no-repeat;
     box-shadow: rgba(0,0,0,0.2) 0px 0px 5px 5px;
     position: relative;
 }
@@ -123,6 +123,18 @@ body {
     box-shadow: rgba(0,0,0,0.3) 2px 2px 3px 1px;
 }
 
+#slidecaption {
+    position: absolute;
+    top: 577px;
+    background: rgba(20, 20, 20, 0.75);
+    height: 113px;
+    width: 960px;
+    left: 266px;
+    color: #eee;
+    padding: 10px;
+    font-size: 13pt;
+}
+
 #galleries{
     float: left;
     width: 266px;
@@ -131,12 +143,31 @@ body {
 }
 
 .gallery {
-    background: rgba(0,0,0,0.0);
+    background: rgba(0,0,0);
     height: 135px;
     width: 256px;
     margin-left: 5px;
     margin-bottom: 10px;
     position: relative;
+    opacity: 0.5;
+}
+
+.gallery:hover{
+    opacity: 1;
+    cursor: hand;
+    cursor: pointer;
+    margin-top: -1px;
+    margin-bottom: 11px;
+    box-shadow: rgba(0,0,0,0.3) 0px 2px 2px 2px;
+}
+
+.galleryActive{
+    opacity: 1;
+    cursor: hand;
+    cursor: pointer;
+    margin-top: -1px;
+    margin-bottom: 11px;
+    box-shadow: rgba(0,0,0,0.3) 0px 2px 2px 2px;
 }
 
 .gallerythumb {
@@ -161,20 +192,40 @@ body {
 }
 
 .galleryname.selected {
-    background: ;
+    background: #eee;
+    color: #222;
 }
 
-.nav {
+#navwrap {
+    position: absolute;
+    top: 545px;
+    left: 266px;
+    width: 960px;
+    height: 24px;
+    color: #eee;
+}
 
+#goleft {
     float: left;
+}
+
+#goright{
+    float: right;
+}
+.nav {
     display: inline-block;
-    background: rgba(0,0,0,0.0);
-    height: 540px;
-    width: 150px;
+    text-align: center;
+    background: rgba(0,0,0,0.25);
+    height: 24px;
+    width: 480px;
+    color: #aaa;
+    font-size: 11pt;
+    line-height: 19pt;
+
 }
 
 .nav:hover {
-    background: rgba(50,50,50,0.7);
+    background: #222;
     cursor: pointer;
     cursor: hand;
 }

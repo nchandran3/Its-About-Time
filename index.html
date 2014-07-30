@@ -5,12 +5,15 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/jquery.js"></script>
 
-    <title>It's About Time</title>
+    <title>24 Hours of Barcelona</title>
 </head>
 <body>
     <div id="wrap">
+        <div id="header">
+            
+        </div>
         <div id="map">
-            <div id="title">It's About Time</div>
+            <div id="title">24 Hours of Barcelona</div>
    
             <div class="marker marker-raval" id="raval">
                 <div class="icon"></div>
@@ -39,7 +42,9 @@
             </div>
         </div>
         <div id="display">
-            <div id="exitdisplay">X</div>
+            <div id="exitdisplay">
+                <span class="glyphicon glyphicon-remove"></span>
+            </div>
             <div id="galleries"></div>
 
             <div id="slide">
@@ -54,17 +59,18 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </div>
             </div>
+            <div id="keybindings">Use arrow keys to navigate</div>
         </div>
     </div>
-<script src="js/images.js">
-    // Js file with JSON content.
-    // This will be replaced with an AJAX call to a JSON file on production
-</script>
-<script src="js/gallery.js">
-    // All gallery, slideshow, and marker content and functionality (minus animation)
-</script>
-<script src="js/Animations.js">
-    // Animation of markers
-</script>
+    <script src="js/images.js">
+        // Js file with JSON content.
+        // This will be replaced with an AJAX call to a JSON file on production
+    </script>
+    <script src="js/gallery.js">
+        // All gallery, slideshow, and marker content and functionality (minus animation)
+    </script>
+    <script src="js/Animations.js">
+        // Animation of markers
+    </script>
 </body>
 </html>

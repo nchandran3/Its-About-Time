@@ -79,15 +79,14 @@ body {
 
 #exitdisplay{
     position: absolute;
-    font-weight: bold;
-    height: 24px;
-    width: 24px;
+    height: 23px;
+    width: 23px;
     border-radius: 12px;
     background: rgba(211, 76, 76, 0.9);
     color: rgb(50,50,50);
-    font-size: 13pt;
-    padding-left: 6px;
-    padding-top: 1px;
+    font-size: 11pt;
+    padding-left: 4px;
+    padding-top: 2px;
     top: 5px;
     right: 5px;
 }
@@ -127,12 +126,12 @@ body {
     position: absolute;
     top: 577px;
     background: rgba(20, 20, 20, 0.75);
-    height: 113px;
     width: 960px;
     left: 266px;
-    color: #eee;
+    color: #ccc;
     padding: 10px;
     font-size: 13pt;
+    line-height: 20pt;
 }
 
 #galleries{
@@ -228,4 +227,11 @@ body {
     background: #222;
     cursor: pointer;
     cursor: hand;
+}
+
+#keybindings {
+    position: absolute;
+    top: 549px;
+    right: 40px;
+    color: #888;
 }

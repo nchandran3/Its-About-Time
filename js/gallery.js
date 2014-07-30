@@ -18,15 +18,19 @@ $(document).ready(function() {
     $(this).keydown(function(e) {
         switch(e.which) {
             case 38:
+                e.preventDefault();
                 navigate("up");
                 break;
             case 40:
+                e.preventDefault();
                 navigate("down");
                 break;
             case 37:
+                e.preventDefault();
                 navigate("left");
                 break;
             case 39:
+                e.preventDefault();
                 navigate("right");
                 break;
         }
@@ -117,6 +121,10 @@ function showDisplay(location) {
     });
 
 
+}
+
+function hideDisplay() {
+    $("#display").fadeOut(250);
 }
 
 function navigate(dir) {

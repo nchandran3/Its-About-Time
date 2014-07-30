@@ -15,7 +15,50 @@ var imagesJSON = '{\
     {\
         "name": "Pla&ccedil;a Reial",\
         "location": [487,418],\
-        "times" : []\
+        "times" : [\
+            {\
+                "name": "Day",\
+                "thumb": "images/reialdaythumb.jpg",\
+                "images": [\
+                    {\
+                        "url": "images/reialday2.jpg",\
+                        "caption": "Placa Reial during the day"\
+                    },\
+                    {\
+                        "url": "images/reialday1.jpg",\
+                        "caption": "Placa Reial during the day"\
+                    }\
+                ]\
+            },\
+            {\
+                "name": "Evening",\
+                "thumb": "images/reialevethumb.jpg",\
+                "images": [\
+                    {\
+                        "url": "images/reialeve2.jpg",\
+                        "caption": "Placa Reial during the evening"\
+                    },\
+                    {\
+                        "url": "images/reialeve1.jpg",\
+                        "caption": "Placa Reial during the evening"\
+                    }\
+                ]\
+            },\
+            {\
+                "name": "Night",\
+                "thumb": "images/reialnightthumb.jpg",\
+                "images": [\
+                    {\
+                        "url": "images/reialnight2.jpg",\
+                        "caption": "Placa Reial during the night"\
+                    },\
+                    {\
+                        "url": "images/reialnight1.jpg",\
+                        "caption": "Placa Reial during the night"\
+                    }\
+                ]\
+            }\
+        ]\
     },\
     "arc" :\
     {\

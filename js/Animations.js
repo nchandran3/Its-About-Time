@@ -101,5 +101,5 @@ function flashBackground(duration)
         blue -= db;
         $body.css({"background:color": "rgb("+red+","+green+","+blue+")"});
     }
-    
+    //Louis sucks
 }

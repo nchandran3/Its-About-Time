@@ -77,11 +77,11 @@ var imagesJSON = '{\
                 "images" : [\
                     {\
                         "url": "images/macbaday1.jpg",\
-                        "caption": "During the day, tourists pass by to visit the MACBA, and as the sun sets, the youth and skateboarders flock to the plaza as locals walk their dogs. Until the dead of night, skateboards control this plaza until the dead of night, when at last only the cerveza salesmen and drunks remain."\
+                        "caption": "During the day, tourists pass by to visit the MACBA, and as the sun sets, the youth and skateboarders flock to the plaza, and locals walk their dogs. Skateboarders control this plaza until the dead of night, when at last only the cerveza salesmen and drunks remain."\
                     },\
                     {\
                         "url": "images/macbaday2.jpg",\
-                        "caption": "Skateboards occupy this plaza all 24 hours of the day, the highest concentration being as the sun is setting. Locals come here to enjoy beers, joints, and the social atmosphere. Photography is not questioned, but welcomed, compared to other parts of the city."\
+                        "caption": "Skateboarders occupy this plaza all 24 hours of the day, at their highest concentration as the sun sets. Locals come here to enjoy beer, drugs, and the social atmosphere. As compared to other parts of the city, photography is not questioned, but welcomed."\
                     },\
                     {\
                         "url": "images/macbaday3.jpg",\
@@ -89,7 +89,7 @@ var imagesJSON = '{\
                     },\
                     {\
                         "url": "images/macbaday4.jpg",\
-                        "caption": "The relationship between the museum and the skateboarders appears to detriment the museum, but in reality comes at no harm to the museum or its contents. The exterior is durable and expansive, and the local people have come only naturally to fill the void it has created. A museum of modern art benefits from the youthful and trendy surroundings."\
+                        "caption": "The relationship between the museum and the skateboarders appears to be detrimental, but in reality comes at no harm to the museum or its contents. The exterior is durable and expansive, and the local people have come only naturally to fill the void it has created. A museum of modern art benefits from the youthful and trendy surroundings."\
                     }\
                 ]\
             },\
@@ -99,11 +99,11 @@ var imagesJSON = '{\
                 "images" : [\
                     {\
                         "url": "images/macbaeve1.jpg",\
-                        "caption": "During the day, tourists pass by to visit the MACBA, and as the sun sets, the youth and skateboarders flock to the plaza as locals walk their dogs. Until the dead of night, skateboards control this plaza until the dead of night, when at last only the cerveza salesmen and drunks remain. "\
+                        "caption": "During the day, tourists pass by to visit the MACBA, and as the sun sets, the youth and skateboarders flock to the plaza, and locals walk their dogs. Skateboarders control this plaza until the dead of night, when at last only the cerveza salesmen and drunks remain. "\
                     },\
                     {\
                         "url": "images/macbaeve2.jpg",\
-                        "caption": "Skateboards occupy this plaza all 24 hours of the day, the highest concentration being as the sun is setting. Locals come here to enjoy beers, joints, and the social atmosphere. Photography is not questioned, but welcomed, compared to other parts of the city."\
+                        "caption": "Skateboarders occupy this plaza all 24 hours of the day, at their highest concentration as the sun sets. Locals come here to enjoy beer, drugs, and the social atmosphere. As compared to other parts of the city, photography is not questioned, but welcomed."\
                     },\
                     {\
                         "url": "images/macbaeve3.jpg",\
@@ -111,7 +111,7 @@ var imagesJSON = '{\
                     },\
                     {\
                         "url": "images/macbaeve4.jpg",\
-                        "caption": "The relationship between the museum and the skateboarders appears to detriment the museum, but in reality comes at no harm to the museum or its contents. The exterior is durable and expansive, and the local people have come only naturally to fill the void it has created. A museum of modern art benefits from the youthful and trendy surroundings."\
+                        "caption": "The relationship between the museum and the skateboarders appears to be detrimental, but in reality comes at no harm to the museum or its contents. The exterior is durable and expansive, and the local people have come only naturally to fill the void it has created. A museum of modern art benefits from the youthful and trendy surroundings."\
                     }\
                 ]\
             },\
@@ -121,11 +121,11 @@ var imagesJSON = '{\
                 "images": [\
                     {\
                         "url": "images/macbanight1.jpg",\
-                        "caption": "During the day, tourists pass by to visit the MACBA, and as the sun sets, the youth and skateboarders flock to the plaza as locals walk their dogs. Until the dead of night, skateboards control this plaza until the dead of night, when at last only the cerveza salesmen and drunks remain. "\
+                        "caption": "During the day, tourists pass by to visit the MACBA, and as the sun sets, the youth and skateboarders flock to the plaza, and locals walk their dogs. Skateboarders control this plaza until the dead of night, when at last only the cerveza salesmen and drunks remain. "\
                     },\
                     {\
                         "url": "images/macbanight2.jpg",\
-                        "caption": "Skateboards occupy this plaza all 24 hours of the day, the highest concentration being as the sun is setting. Locals come here to enjoy beers, joints, and the social atmosphere. Photography is not questioned, but welcomed, compared to other parts of the city."\
+                        "caption": "Skateboarders occupy this plaza all 24 hours of the day, at their highest concentration as the suhn sets. Locals come here to enjoy beer, drugs, and the social atmosphere. As compared to other parts of the city, photography is not questioned, but welcomed."\
                     },\
                     {\
                         "url": "images/macbanight3.jpg",\
@@ -133,7 +133,7 @@ var imagesJSON = '{\
                     },\
                     {\
                         "url": "images/macbanight4.jpg",\
-                        "caption": "The relationship between the museum and the skateboarders appears to detriment the museum, but in reality comes at no harm to the museum or its contents. The exterior is durable and expansive, and the local people have come only naturally to fill the void it has created. A museum of modern art benefits from the youthful and trendy surroundings."\
+                        "caption": "The relationship between the museum and the skateboarders appears to be detrimenal, but in reality comes at no harm to the museum or its contents. The exterior is durable and expansive, and the local people have come only naturally to fill the void it has created. A museum of modern art benefits from the youthful and trendy surroundings."\
                     }\
                 ]\
             }\
@@ -141,3 +141,4 @@ var imagesJSON = '{\
     }\
 }';
 var images = $.parseJSON(imagesJSON);
+ee

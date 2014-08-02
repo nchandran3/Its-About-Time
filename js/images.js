@@ -1,9 +1,9 @@
 var images = {
-		
+
 	/*************************
 	 * RAMBLA DE RAVAL
 	 *************************/
-		
+
 	"raval" : {
 		"name" : "Rambla de Raval",
 		"location" : [ 388, 228 ],
@@ -14,7 +14,7 @@ var images = {
 					"images" : [
 							{
 								"url" : "images/Naveen/RavalDay1.jpg",
-								"caption" : "During the day, this ebullient neighborhood is packed with residents, foreigners, and everything in between. It surges with pedestrian traffic down its narrow, yet familiarly structured walkway. Stores are put in makeshift tents, giving a quick appeal to any wandering eyes, and displaying their goods in accordance with the hurried lifestyle. Trees are planted periodically to provide shade and relief to exhausted consumers – not only of the stores, but of the restaurants as well. "
+								"caption" : "During the day, this ebullient neighborhood is packed with residents, foreigners, and everything in between. It surges with pedestrian traffic down its narrow, yet familiarly structured walkway. Stores are put in makeshift tents, giving a quick appeal to any wandering eyes, and displaying their goods in accordance with the hurried lifestyle. Trees are planted periodically to provide shade and relief to exhausted consumers - not only of the stores, but of the restaurants as well. "
 							},
 							{
 								"url" : "images/Naveen/RavalDay2.jpg",
@@ -64,14 +64,11 @@ var images = {
 							} ]
 				} ]
 	},
-	
-	
-	
-	
+
 	/*********************
 	 * FORT PIENC
 	 *********************/
-	
+
 	"fortpienc" : {
 		"name" : "Fort Pienc",
 		"location" : [ 159, 1092 ],
@@ -96,8 +93,7 @@ var images = {
 							{
 								"url" : "images/Naveen/PiencEve1.jpg",
 								"caption" : "This picture was taken during the evening in late May. The benches provide a perfect view to the dancers, and there are booths installed behind them. There are children in the background as well; they normally populate the area, playing soccer, riding bikes, or clinging to parents who have come to pick them up from school. "
-							},
-							{
+							}, {
 								"url" : "images/Naveen/PiencEve2.jpg",
 								"caption" : ""
 							} ]
@@ -117,15 +113,10 @@ var images = {
 				} ]
 	},
 
-	
-	
-	
-	
-	
 	/*************************
 	 * PLACA REIAL
 	 *************************/
-	
+
 	"placareial" : {
 		"name" : "Pla&ccedil;a Reial",
 		"location" : [ 487, 418 ],
@@ -170,16 +161,11 @@ var images = {
 							} ]
 				} ]
 	},
-	
-	
-	
-	
-	
+
 	/*****************************
 	 * ARC DE TRIOMF
 	 *****************************/
-	
-	
+
 	"arc" : {
 		"name" : "Arc de Triomf",
 		"location" : [ 287, 900 ],
@@ -232,14 +218,11 @@ var images = {
 							} ]
 				} ]
 	},
-	
-	
-	
-	
+
 	/*****************************************
 	 * MACBA
 	 *****************************************/
-	
+
 	"macba" : {
 		"name" : "MACBA",
 		"location" : [ 201, 305 ],

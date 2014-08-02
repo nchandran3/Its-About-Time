@@ -133,6 +133,8 @@ body {
     padding: 10px;
     font-size: 13pt;
     line-height: 20pt;
+    max-height: 115px;
+    overflow-y: auto;
 }
 
 #galleries{

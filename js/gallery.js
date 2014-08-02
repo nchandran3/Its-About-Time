@@ -79,7 +79,8 @@ function loadGallery(location, index) {
     $(".gallery").removeClass("galleryActive");
     $(".gallery[data-id='" + index + "']").addClass("galleryActive");
         
-
+    var len = gallery["images"].length;
+    currentImage = (currentImage >= len) ? currentImage % len : currentImage;
     loadImage(gallery["images"][currentImage]);
 }
 

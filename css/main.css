@@ -134,7 +134,7 @@ body {
     font-size: 13pt;
     line-height: 20pt;
     max-height: 115px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #galleries{

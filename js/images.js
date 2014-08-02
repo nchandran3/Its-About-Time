@@ -93,9 +93,6 @@ var images = {
 							{
 								"url" : "images/Naveen/PiencEve1.jpg",
 								"caption" : "This picture was taken during the evening in late May. The benches provide a perfect view to the dancers, and there are booths installed behind them. There are children in the background as well; they normally populate the area, playing soccer, riding bikes, or clinging to parents who have come to pick them up from school. "
-							}, {
-								"url" : "images/Naveen/PiencEve2.jpg",
-								"caption" : ""
 							} ]
 				},
 				{

@@ -84,7 +84,7 @@ body {
     width: 23px;
     border-radius: 12px;
     background: rgba(211, 76, 76, 0.9);
-    color: rgb(50,50,50);
+    color: #eee;
     font-size: 11pt;
     padding-left: 4px;
     padding-top: 2px;
@@ -248,7 +248,7 @@ body {
     margin-right: auto;
     padding: 10px 0px 0px 0px;
     text-align: center;
-    z-index: 5;
+    z-index: 2;
 }
 
 #footer a {

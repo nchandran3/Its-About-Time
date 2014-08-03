@@ -1,25 +1,53 @@
 body {
     background-color : #2e2e2e;
 }
-h1 {
-    color: white;
-    font-family: Impact;
-    font-size: 85px;
+h1#title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 48pt;
+    background: rgba(0,0,0,0.5);
+    display: inline;
+    padding: 0px 10px;
+    box-shadow: rgba(0,0,0,0.2) 2px 2px 5px 1px;
 }
 
 h2 {
-	font-size: 55px;
-	color: #4ec10f;
-	position:relative;
+	font-size: 24pt;
+	color: #222;
+    background: #eee;
+    padding: 0px 5px;
+    margin: 20px 0px 10px 55px ;
+	display: inline-block;
+    box-shadow: rgba(0,0,0,0.2) 1px 1px 1px 1px;
 }
 
 p {
-    color: #eee;
-    font-size: medium;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+#background {
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("../images/map.jpg");
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+
 }
 
 .tab {
-    text-indent: 50px;
+    color: #eee;
+    font-size: 13pt;
+    padding: 5px 12px;
+    background: rgba(0,0,0,0.5);
+    line-height: 19pt;
 }
 
 
@@ -30,30 +58,38 @@ p {
 
 
 #content {
-    font-family: "Courier New";
-    width: 70%;
+    margin-top: 10px;
+    /*margin-right: 100px;*/
     display: inline-block;
-	left: 10px;
 	vertical-align:top;
 }
 
-#info {
+.info {
 	position: relative;
-	left:55px;
+	margin-left:55px;
+    margin-bottom: 10px;
 }
 #next {
-	display: inline-block;
-	width:110px;
-	height: 110px;
-	border-radius: 110px;
-	box-shadow: 0px 0px 5px;
-	background-color: #4ec10f;
-	margin-top: 240px;
-	margin-left: 200px;
+    vertical-align: top;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    box-shadow: rgba(0,0,0,0.2) 2px 2px 7px 2px;
+    background-color: rgba(211, 76, 76, 0.76);
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-left: 8px;
+    float: right;
+}
+
+#next a{
+    font-size: 24pt;
+    color: #eee;
 }
 
 #next:hover{
-    background-color: #05390A;
+    background-color: rgba(211, 76, 76, 1);
 }
 
 #arrow {
@@ -64,5 +100,9 @@ p {
 }
 
 #wrap{
-	display: inline-block;
+    margin-top: 50px;
+    position: relative;
+	width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -52,6 +52,10 @@ p {
 	margin-left: 200px;
 }
 
+#next:hover{
+    background-color: #05390A;
+}
+
 #arrow {
 	height: 100px;
 	position: relative;
